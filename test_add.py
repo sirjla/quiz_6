@@ -23,3 +23,6 @@ class TestAdd(unittest.TestCase):
 
 	def test_empty_after_coma(self):
 		self.assertEqual(Add('1,2,'), 3)
+
+	def test_empty_between_coma(self):
+		self.assertEqual(Add('1,,3'), 4)
