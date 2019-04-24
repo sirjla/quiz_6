@@ -11,3 +11,6 @@ class TestAdd(unittest.TestCase):
 
 	def test_adds_three_coma_separated_digits(self):
 		self.assertEqual(Add('1,2,3'), 6)
+
+	def test_adds_10_coma_separated_digits(self):
+		self.assertEqual(Add('1,2,3,4,5,6,7,8,9,10'), 55)
