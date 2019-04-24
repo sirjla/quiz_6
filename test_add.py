@@ -26,3 +26,6 @@ class TestAdd(unittest.TestCase):
 
 	def test_empty_between_coma(self):
 		self.assertEqual(Add('1,,3'), 4)
+
+	def test_non_number_in_input(self):
+		self.assertEqual(Add('1,2,k'), 3)
