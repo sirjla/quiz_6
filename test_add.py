@@ -29,3 +29,6 @@ class TestAdd(unittest.TestCase):
 
 	def test_non_number_in_input(self):
 		self.assertEqual(Add('1,2,k'), 3)
+
+	def test_add_other_symbol_separated_digits(self, symbol=';'):
+		self.assertEqual(Add('1;2;3'), 6)
