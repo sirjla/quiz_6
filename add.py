@@ -1,4 +1,6 @@
 def Add(text):
-	numbers = map(int, text.split(','))
+	numbers = text.split(',')
+	numbers = filter(lambda number: number != '', numbers)
+	numbers = map(int, numbers)
 	numbers = filter(lambda number: number>0, numbers)
 	return sum(numbers)
