@@ -17,3 +17,6 @@ class TestAdd(unittest.TestCase):
 
 	def test_adds_tnegative_numbers(self):
 		self.assertEqual(Add('1,2,3,-1'), 6)
+
+	def test_empty_before_coma(self):
+		self.assertEqual(Add(',2,3'), 5)
